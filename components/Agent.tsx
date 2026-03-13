@@ -44,7 +44,7 @@ const Agent = ({ userName }: AgentProps) => {
               alt="user"
               width={120}
               height={120}
-              className="rounded-full object-cover  size-[120px]"
+              className="rounded-full object-cover  size-30"
             ></Image>
             <h3>{userName}</h3>
           </div>
