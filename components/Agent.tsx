@@ -11,7 +11,7 @@ enum CallStatus{
 
 const Agent = ({ userName }: AgentProps) => {
 
-    const callStatus=CallStatus.FINISHED ;
+    const callStatus=CallStatus.ACTIVE ;
   const isSpeaking = true;
   const messages=[
     'Whats your name?',
@@ -31,8 +31,10 @@ const Agent = ({ userName }: AgentProps) => {
               height={54}
               className="object-cover"
             ></Image>
+            
             {isSpeaking && <span className="animate-speak" />}
           </div>
+           <h3>AI</h3>
         </div>
 
         <div className="card-border">
